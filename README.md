@@ -1,5 +1,9 @@
 # Maze Media
 
+**New in build 13:** [Brass Labyrinth — Morlock’s Maze theme](sections/13-brass-labyrinth/README.md), with original Blender assets, a shared Apple-platform palette and verified app captures.
+
+![Brass Labyrinth theme](sections/13-brass-labyrinth/figma-theme-board.png)
+
 ![Maze Media design portfolio cover](assets/figma/cover.png)
 
 **A native front door to Morlock’s Maze: media, collections and selected household services across iPhone, iPad, Apple TV and Mac.**
@@ -52,6 +56,7 @@ Each section has its own folder, design narrative and separately maintained `PLA
 | 09 · Mealie & Home Assistant | [Read](sections/09-household/README.md) | [Plan](sections/09-household/PLAN.md) |
 | 10 · Home-lab architecture & network integration | [Read](sections/10-home-lab/README.md) | [Plan](sections/10-home-lab/PLAN.md) |
 | 11 · Device identity, enrollment & session design | [Read](sections/11-identity/README.md) | [Plan](sections/11-identity/PLAN.md) |
+| 13 · Brass Labyrinth theme | [Read](sections/13-brass-labyrinth/README.md) | [Plan](sections/13-brass-labyrinth/PLAN.md) |
 | 12 · Version history, evidence & delivery | [Read](sections/12-release/README.md) | [Plan](sections/12-release/PLAN.md) |
 
 ## Capability snapshot
@@ -67,7 +72,9 @@ Each section has its own folder, design narrative and separately maintained `PLA
 
 ## Version and release checkpoint
 
-**Documented on September 6, 2026.** Build 9 is the last recorded TestFlight release. Development build 10 added household access and automatic setup work. Build 11 added shared video controls and local Mac delivery. The iPhone’s controls test passed twice; the Mac has passing unit checks and direct mouse verification. The final Mac automated run was interrupted, and iPad/TV release checks remain open.
+**Theme checkpoint, September 6, 2026:** Build 13 is installed locally across all four editions; iOS and tvOS are **Testing** in the existing internal TestFlight group. [Current theme evidence](sections/13-brass-labyrinth/VERIFICATION.md) separates device tests, Apple processing and tester availability.
+
+**Earlier portfolio checkpoint.** Build 9 is the last recorded TestFlight release. Development build 10 added household access and automatic setup work. Build 11 added shared video controls and local Mac delivery. The iPhone’s controls test passed twice; the Mac has passing unit checks and direct mouse verification. The final Mac automated run was interrupted, and iPad/TV release checks remain open.
 
 See the [version chronology and evidence](sections/12-release/EVIDENCE.md) for passed, skipped, failed and interrupted results. This portfolio does not claim that all tests passed, all services work without NetBird, or every content type is implemented on every device.
 

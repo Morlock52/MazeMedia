@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Test - MorlocksMazeMediaTV",
+    "result": "Passed",
+    "passedTests": 73,
+    "failedTests": 0,
+    "skippedTests": 2,
+    "runtimeWarnings": [],
+    "artifact": "Theme13TV.xcresult"
+  },
+  {
+    "title": "Test - MorlocksMazeMedia",
+    "result": "Passed",
+    "passedTests": 71,
+    "failedTests": 0,
+    "skippedTests": 2,
+    "runtimeWarnings": [
+      {
+        "issueType": "Runtime Warning",
+        "message": "This method should not be called on the main thread as it may lead to UI unresponsiveness."
+      }
+    ],
+    "artifact": "Theme13Mac.xcresult"
+  },
+  {
+    "title": "Test - MorlocksMazeMedia",
+    "result": "Passed",
+    "passedTests": 1,
+    "failedTests": 0,
+    "skippedTests": 0,
+    "runtimeWarnings": [],
+    "artifact": "Theme13PhoneSimulator.xcresult"
+  },
+  {
+    "title": "Test - MorlocksMazeMedia",
+    "result": "Passed",
+    "passedTests": 1,
+    "failedTests": 0,
+    "skippedTests": 0,
+    "runtimeWarnings": [],
+    "artifact": "Theme13IPadScreen.xcresult"
+  },
+  {
+    "title": "Test - MorlocksMazeMediaTV",
+    "result": "Passed",
+    "passedTests": 1,
+    "failedTests": 0,
+    "skippedTests": 0,
+    "runtimeWarnings": [],
+    "artifact": "Theme13TVContrast.xcresult"
+  }
+]

@@ -15,10 +15,13 @@ for p in ROOT.rglob('*.md'):
   if re.search(pattern,s):errors.append(f'{p.relative_to(ROOT)}: {label}')
 for item in json.loads((ROOT/'assets/screenshots/manifest.json').read_text()):
  if hashlib.sha256((ROOT/item['file']).read_bytes()).hexdigest()!=item['sha256']:errors.append(item['file']+': hash mismatch')
+theme=ROOT/'sections/13-brass-labyrinth'
+for item in json.loads((theme/'screenshots.json').read_text()):
+ if hashlib.sha256((theme/item['file']).read_bytes()).hexdigest()!=item['sha256']:errors.append(item['file']+': theme capture hash mismatch')
 for item in json.loads((ROOT/'assets/figma/manifest.json').read_text())['boards']:
  if hashlib.sha256((ROOT/item['file']).read_bytes()).hexdigest()!=item['sha256']:errors.append(item['file']+': Figma export hash mismatch')
 for folder in (ROOT/'sections').iterdir():
  for name in ['README.md','PLAN.md']:
   if not (folder/name).exists():errors.append(str(folder/name))
 if errors:raise SystemExit('\n'.join(errors))
-print(f'PASS: {links} local links, 12 section folders, screenshot/Figma hashes and public text scope')
+print(f'PASS: {links} local links, {len(list((ROOT/"sections").iterdir()))} section folders, screenshot/Figma hashes and public text scope')

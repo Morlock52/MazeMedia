@@ -1,0 +1,34 @@
+[
+  {
+    "file": "iphone-home.png",
+    "date": "2026-09-06",
+    "build": "13",
+    "source": "iPhone 17 Pro simulator, iOS 26.5",
+    "content": "Demo fixture",
+    "sha256": "a867cbbf391ca6712a17e38d42fda1b6956b2b21502c128f38ff480b3c0b4ab2"
+  },
+  {
+    "file": "ipad-home.png",
+    "date": "2026-09-06",
+    "build": "13",
+    "source": "Physical iPad Pro M4, iPadOS 27 beta",
+    "content": "Demo fixture",
+    "sha256": "d5788f2fd88a13d2db616cd53aaf868027b4074e90c475ca8669e0fba3d04986"
+  },
+  {
+    "file": "mac-home.png",
+    "date": "2026-09-06",
+    "build": "13",
+    "source": "Mac Catalyst window, macOS 27 beta",
+    "content": "Demo fixture",
+    "sha256": "c4f1799bcb7a62e1307027b4e14cf0677949ea0f24d2b1667fb9f4c5cbbd4fbf"
+  },
+  {
+    "file": "tvos-home.png",
+    "date": "2026-09-06",
+    "build": "13",
+    "source": "Physical Apple TV 4K, tvOS 27 beta",
+    "content": "Demo fixture",
+    "sha256": "ad501f93881dcf40a9ee4183ba438dcbf6f712ab1db3cb1cb99b0c24cbfd6981"
+  }
+]

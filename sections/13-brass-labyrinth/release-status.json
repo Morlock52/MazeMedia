@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "build": "13",
+  "date": "2026-09-06",
+  "ios": {
+    "upload": "succeeded",
+    "testflight": "Testing",
+    "group": "MorloksMaze Internal",
+    "buildID": "df9e4d86-26fd-49f1-b6fb-09037be7a609"
+  },
+  "tvos": {
+    "upload": "succeeded",
+    "testflight": "Testing",
+    "group": "MorloksMaze Internal",
+    "buildID": "6dbd89d8-9ad6-48e8-af04-495d05c44a18"
+  },
+  "mac": {
+    "installedBuild": "13",
+    "signature": "verified",
+    "normalLaunch": "succeeded"
+  },
+  "physicalIPhone": {
+    "installedBuild": "13",
+    "launch": "blocked by device lock",
+    "interaction": "not verified"
+  }
+}

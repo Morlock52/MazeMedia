@@ -30,3 +30,8 @@ Traceability: [revision-pinned implementation ledger](https://github.com/Morlock
 | Development build 11 | Shared controls panel, transport options, scoped platform fixes and Mac Catalyst delivery | iPhone installed; Mac installed locally; release checks remain open |
 
 The four platform editions share the product version where applicable. iPhone and iPad share an iOS target; the Mac uses Catalyst from that target; Apple TV has its own native target. “Four editions” does not mean four independently released App Store products.
+
+
+## Build 13 — Brass Labyrinth
+
+September 6, 2026: iOS and tvOS build 13 are **Testing** for MorloksMaze Internal. The same theme is installed locally across iPhone, iPad, Mac and Apple TV. [Theme verification](../13-brass-labyrinth/VERIFICATION.md) records tests, skips, the Mac warning and the locked iPhone interaction limit. Earlier entries remain dated historical checkpoints.
