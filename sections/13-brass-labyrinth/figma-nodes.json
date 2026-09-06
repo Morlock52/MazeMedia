@@ -1,0 +1,10 @@
+{
+  "fileKey": "sfpDlUVIM1j8i4wZ1wjCBC",
+  "page": "8:2",
+  "specification": "8:12",
+  "iPhone": "12:2",
+  "iPad": "14:2",
+  "Mac": "12:5",
+  "AppleTV": "12:8",
+  "notes": "Editable annotation frames around actual demo-content app captures. iPad fill rotation honors the capture orientation. Original capture hashes are in screenshots.json."
+}

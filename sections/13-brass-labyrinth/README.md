@@ -12,10 +12,10 @@ A shared identity for iPhone, iPad, Mac and Apple TV: charcoal iron, aged brass,
 
 | Edition | Theme behavior | Capture |
 |---|---|---|
-| iPhone | Adaptive service grid, native tabs, static architectural header | [Simulator / demo content](iphone-home.png) |
-| iPad | Persistent sidebar, wider shelves and scalable service labels | [Physical iPad / demo content](ipad-home.png) |
-| Mac | Catalyst sidebar and pointer navigation, matching content surfaces | [Mac window / demo content](mac-home.png) |
-| Apple TV | Five native destinations, remote focus with dark text on brass, household entry points | [Physical TV / demo content](tvos-home.png) |
+| iPhone | Adaptive service grid, native tabs, static architectural header | [Capture](iphone-home.png) · [Figma](https://www.figma.com/design/sfpDlUVIM1j8i4wZ1wjCBC?node-id=12-2) |
+| iPad | Persistent sidebar, wider shelves and scalable service labels | [Capture](ipad-home.png) · [Figma](https://www.figma.com/design/sfpDlUVIM1j8i4wZ1wjCBC?node-id=14-2) |
+| Mac | Catalyst sidebar and pointer navigation, matching content surfaces | [Capture](mac-home.png) · [Figma](https://www.figma.com/design/sfpDlUVIM1j8i4wZ1wjCBC?node-id=12-5) |
+| Apple TV | Five native destinations, remote focus with dark text on brass, household entry points | [Capture](tvos-home.png) · [Figma](https://www.figma.com/design/sfpDlUVIM1j8i4wZ1wjCBC?node-id=12-8) |
 
 The shared palette reaches native content, legacy semantic theme adapters, the audio player and household selections. Actual provider artwork keeps priority; the generated architecture appears behind the media-type symbol only when artwork is absent. Video receives no decorative overlay. Reduce Transparency uses an opaque header surface.
 
