@@ -1,0 +1,74 @@
+[
+  {
+    "file": "assets/screenshots/01-iphone-home.jpg",
+    "kind": "Simulator / demo fixture",
+    "date": "2026-09-05",
+    "sha256": "fc031ac25b12584d39ab9e9c349b9680f47f46c2e938fddaf539bfe4b80be8ab"
+  },
+  {
+    "file": "assets/screenshots/02-iphone-library.jpg",
+    "kind": "Simulator / demo fixture",
+    "date": "2026-09-05",
+    "sha256": "6bf5ffe71485a5ae063087cd54381a7fdcab2a5345d24a3b5f7ae416fac651d2"
+  },
+  {
+    "file": "assets/screenshots/03-iphone-live.jpg",
+    "kind": "Simulator / demo fixture",
+    "date": "2026-09-05",
+    "sha256": "32f86c3706152d8c2b988bbed921f07611e6f57d8cb0cf65e859dbda1b422bef"
+  },
+  {
+    "file": "assets/screenshots/04-iphone-search.jpg",
+    "kind": "Simulator / demo fixture",
+    "date": "2026-09-05",
+    "sha256": "371dce56024c5df011804365ee118806ec1cc9caa1126730ebe346066e456292"
+  },
+  {
+    "file": "assets/screenshots/07-ipad-home.jpg",
+    "kind": "Simulator / demo fixture",
+    "date": "2026-09-05",
+    "sha256": "6c7a801fa0cd49fafcc03f1a11524404a2f41103a64f5d44b207622633eff74f"
+  },
+  {
+    "file": "assets/screenshots/08-ipad-movies.jpg",
+    "kind": "Simulator / demo fixture",
+    "date": "2026-09-05",
+    "sha256": "1abf0f6048b812069b648ed708e70f5b146c4cc3051379eea8b9de2232b82247"
+  },
+  {
+    "file": "assets/screenshots/09-ipad-shows.jpg",
+    "kind": "Simulator / demo fixture",
+    "date": "2026-09-05",
+    "sha256": "fb6886f340d7a782dd217c453fab50bb0ff1b0a5ca14cd0eeadcd0441b9c7da0"
+  },
+  {
+    "file": "assets/screenshots/10-ipad-live.jpg",
+    "kind": "Simulator / demo fixture",
+    "date": "2026-09-05",
+    "sha256": "a28868fd0548128fd03e1b0234c409b16519569ce06d8356967b8c7a8a9e7dad"
+  },
+  {
+    "file": "assets/screenshots/11-ipad-search.jpg",
+    "kind": "Simulator / demo fixture",
+    "date": "2026-09-05",
+    "sha256": "cfd1c3f5608fcf6dfc795843874f17738accf60f8ea3b865647cad7cf91635ff"
+  },
+  {
+    "file": "assets/screenshots/13-ipad-series.jpg",
+    "kind": "Simulator / demo fixture",
+    "date": "2026-09-05",
+    "sha256": "84b554ba8f182432f7f41a479248a6b7a80b0726ff7eb436a04426ed3e2f4335"
+  },
+  {
+    "file": "assets/screenshots/16-tvos-home.png",
+    "kind": "Simulator / demo fixture",
+    "date": "2026-09-05",
+    "sha256": "c43e9409e89a14bcaf0d59d74a995765be6de2c50969fe6f54d62965f8cbd63e"
+  },
+  {
+    "file": "assets/screenshots/19-mac-home.png",
+    "kind": "Mac runtime / demo fixture",
+    "date": "2026-09-06",
+    "sha256": "64c9d507f01c33ee7d900fba9d156f2c3ce11400061b8c82cb8a492c7a2dd71a"
+  }
+]

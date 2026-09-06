@@ -1,0 +1,299 @@
+[
+  {
+    "slug": "01-product",
+    "title": "Product vision & design system",
+    "summary": "Make a privately operated collection easy to explore from the Apple device already in use.",
+    "body": "Maze Media is the client experience for Morlock’s Maze. It brings media and selected household services into a consistent navigation model while leaving storage, identity and service administration in the home lab. The product goal is broad access to the owner’s content; the current implementation is deliberately narrower than that goal. A service tile does not establish complete support for its provider.",
+    "journey": "Open Home, choose a collection or service, inspect its content, then return through a predictable Back or Done action. Keep the current location visible and make failed requests distinguishable from an empty library.",
+    "decisions": [
+      "Use native Apple navigation and AVKit for core media.",
+      "Keep provider names where they help the user understand the destination.",
+      "Use focused detail pages instead of placing every action below a long dashboard.",
+      "Treat consistency as shared meaning and behavior; adapt layout to touch, pointer and remote."
+    ],
+    "steps": [
+      "Maintain one destination and capability inventory across all four editions.",
+      "Audit contrast, text scaling, focus indication and empty/error/loading states.",
+      "Refresh publication captures after accepted UI changes; retain their build and capture method."
+    ],
+    "accept": [
+      "Each visible destination has an owner, implementation status and return path.",
+      "A first-time reader can tell a current feature from a proposed one.",
+      "Keyboard, VoiceOver and remote focus checks are recorded per platform."
+    ],
+    "images": []
+  },
+  {
+    "slug": "02-iphone",
+    "title": "iPhone edition",
+    "summary": "A compact, touch-first entrance to the library and household services.",
+    "body": "The iPhone edition uses Home, Library, Live, More and Search as its five bottom tabs. Home provides direct entry to collections and supported services. Jellyfin supplies movies, shows, saved videos and music; the app presents native playback. RomM and Jellyseerr use an embedded service browser, while Mealie and Home Assistant appear on the main menu.",
+    "journey": "Home → All libraries → collection → item → Play. In the service browser, Back and Forward move through the service; Done returns to Maze Media. Home → Connect Apple TV approves the television’s short-lived household pairing code.",
+    "decisions": [
+      "Keep primary navigation reachable without scrolling.",
+      "Show video settings in a stable controls panel.",
+      "Keep saved-video folder navigation within Jellyfin; the folder named Youtube is not a separate YouTube integration."
+    ],
+    "steps": [
+      "Retain the passing build 11 pause, seek, restart, resume and dismissal behavior.",
+      "Complete sustained playback, subtitle, AirPlay and Picture in Picture checks with representative streams.",
+      "Verify foreground/background recovery and service renewal on Wi-Fi and cellular separately."
+    ],
+    "accept": [
+      "Recorded build 11 controls test passes on a physical iPhone.",
+      "Each browser destination can return to the app without a navigation dead end.",
+      "A failed stream exposes a useful retry or compatibility action."
+    ],
+    "images": [
+      "01-iphone-home.jpg",
+      "02-iphone-library.jpg",
+      "03-iphone-live.jpg",
+      "04-iphone-search.jpg"
+    ]
+  },
+  {
+    "slug": "03-ipad",
+    "title": "iPad edition",
+    "summary": "A persistent sidebar and wider content area for browsing and reading.",
+    "body": "The iPad shares the iOS application target and service model. Its sidebar exposes Home, Movies, Shows, Live TV, Search, Games and Services, with household shortcuts. Catalog and series detail views use the additional space. This is a device-specific presentation of the shared product, not a separate server stack.",
+    "journey": "Sidebar → Shows → series → season → episode. Back returns through the content hierarchy without losing the sidebar. Service browser pages retain Back, Forward, Reload and Done.",
+    "decisions": [
+      "Preserve library hierarchy and selected context.",
+      "Use native collection/detail navigation and an explicit browser exit.",
+      "Design for touch and pointer input without treating every large screen as an enlarged phone."
+    ],
+    "steps": [
+      "Finish the current physical controls and automatic-enrollment acceptance checks.",
+      "Exercise rotation, narrow windows and keyboard presentation.",
+      "Retest RomM’s game launch and return path on the actual iPad; a successful library page is insufficient."
+    ],
+    "accept": [
+      "Video pause/seek/resume is proven on the final iPad candidate.",
+      "Rotation and window changes preserve the selected item.",
+      "No nested login page traps the user inside a browser."
+    ],
+    "images": [
+      "07-ipad-home.jpg",
+      "08-ipad-movies.jpg",
+      "09-ipad-shows.jpg",
+      "13-ipad-series.jpg"
+    ]
+  },
+  {
+    "slug": "04-tvos",
+    "title": "Apple TV edition",
+    "summary": "A native, remote-driven experience for shared viewing.",
+    "body": "Apple TV keeps five sidebar destinations: Home, Movies, Shows, Live TV and Search. Core media is negotiated through Jellyfin and played with AVKit. Home also opens native Mealie recipes and Home Assistant state views. The television application does not embed WebKit or a general-purpose browser.",
+    "journey": "Move remote focus from the sidebar into content, choose a title or channel, and open the native player. Back returns to the prior view. Household access can be approved from an already approved iPhone or iPad using the TV’s temporary code.",
+    "decisions": [
+      "Maintain native focus, selection and Back behavior.",
+      "Admit a new TV feature only after its API, authentication, failure and physical interaction paths are proven.",
+      "Keep game execution, full photo browsing, book reading and requests marked as pending TV counterparts."
+    ],
+    "steps": [
+      "Wake the physical Apple TV and finish build 11 transport-controls acceptance.",
+      "Retest long playback, track selection and recovery after app switching.",
+      "Design native counterparts for requested services only when their APIs and remote interactions are viable."
+    ],
+    "accept": [
+      "The remote can pause, resume, seek when supported, and exit playback.",
+      "Native recipe and household-state navigation passes on physical TV hardware.",
+      "No unsupported browser or unverified game feature is advertised as complete."
+    ],
+    "images": [
+      "16-tvos-home.png"
+    ]
+  },
+  {
+    "slug": "05-mac",
+    "title": "Mac edition",
+    "summary": "A desktop companion built from the shared iOS target with Mac Catalyst.",
+    "body": "The Mac edition brings the sidebar, native media player and service destinations into a resizable window. The locally delivered development build targets Apple silicon and macOS 14 or later; recorded runtime checks used macOS 27 beta. It is a signed local development application, not a notarized public download or a Mac App Store release.",
+    "journey": "Choose a sidebar destination with the pointer, browse to an item and open playback. The controls panel provides transport, speed and sound controls. Close controls returns to the player; Done returns to the collection.",
+    "decisions": [
+      "Use the existing shared source rather than fork a separate service stack.",
+      "Pass the session explicitly into modal player presentations.",
+      "Use the established audio-activation API off the main thread on Catalyst after the beta async path failed."
+    ],
+    "steps": [
+      "Repeat automated mouse acceptance without the floating dialog that interrupted XCTest.",
+      "Verify keyboard navigation, window resizing and external-display behavior.",
+      "Prepare distribution signing/notarization or Mac App Store delivery as a separate release decision."
+    ],
+    "accept": [
+      "The installed app launches and loads its navigation and provider content.",
+      "Recorded mouse checks cover pause, seek, restart, resume and speed selection.",
+      "The automated test is reported as interrupted until an uninterrupted run passes."
+    ],
+    "images": [
+      "19-mac-home.png"
+    ]
+  },
+  {
+    "slug": "06-library-playback",
+    "title": "Library, video, music & live TV",
+    "summary": "One Jellyfin content model, with playback capabilities matched to each stream.",
+    "body": "Jellyfin owns the catalog, user session, playback negotiation and media delivery. The app preserves folders, collections, series, seasons and episodes. Music is a Jellyfin audio experience; Music Assistant integration is separate planned work. Saved videos in the owner’s Youtube folder use the same native playback path as other Jellyfin video.",
+    "journey": "Browse or search → item details → direct or server-converted playback → progress checkpoint → return. Live TV follows the existing server chain: ErsatzTV schedule/playout → xTeVe tuner/guide bridge → Jellyfin → native Apple player.",
+    "decisions": [
+      "Keep media bytes out of the JSON control-plane Gateway.",
+      "Offer direct playback first and an explicit compatible-playback action.",
+      "Only offer seeking inside the available range; live streams without DVR cannot rewind.",
+      "Audio and subtitle choices depend on tracks actually delivered by the stream."
+    ],
+    "steps": [
+      "Build a representative format matrix including saved videos, films, episodes, music and live channels.",
+      "Check first frame, sustained advancement, seek/resume, interruption and stop reporting.",
+      "Verify available tracks, fit/fill, volume, AirPlay and Picture in Picture on each supported device."
+    ],
+    "accept": [
+      "A play action results in decoded frames and advancing time, or an explicit error.",
+      "Leaving playback stops or hands off the session according to the intended lifecycle.",
+      "Resume position remains valid after failure and relaunch."
+    ],
+    "images": [
+      "02-iphone-library.jpg",
+      "10-ipad-live.jpg"
+    ]
+  },
+  {
+    "slug": "07-games-requests",
+    "title": "Games & media requests",
+    "summary": "Bring RomM and Jellyseerr into the app with an obvious way back.",
+    "body": "RomM and Jellyseerr are separate open-source services with existing household routes. On iPhone, iPad and Mac, Maze Media provides an embedded browser with a constrained service destination. Reaching a catalog does not prove game execution or a completed request. The last implementation checkpoint keeps these app-specific routes on the private access path.",
+    "journey": "Home → Games or Requests → service content. Use browser Back/Forward within the service, Reload for a recoverable load failure, and Done to return to the native application.",
+    "decisions": [
+      "Preserve each provider’s own content and authorization model.",
+      "Treat web game runtime, nested authentication and touch/controller input as distinct checks.",
+      "Do not claim a tvOS browser, emulator core or completed native request client."
+    ],
+    "steps": [
+      "Test the exact game-launch path beyond the second authentication screen.",
+      "Validate controller/touch input, game exit and browser history on the iPad.",
+      "Specify a native TV requests API and authorization contract before adding a TV tile."
+    ],
+    "accept": [
+      "The requested game actually starts and accepts input on the target device.",
+      "The browser returns to Maze Media from nested pages and error screens.",
+      "Private route requirements are explained before the user encounters a blank page."
+    ],
+    "images": []
+  },
+  {
+    "slug": "08-photos-reading",
+    "title": "Photos, books & saving content",
+    "summary": "A scoped photo integration today; a clear plan for reading and write-back.",
+    "body": "The current photo integration uses Immich. Approved devices request a restricted per-device key for asset read/view and use the provider’s direct asset route. The photo route still depends on private connectivity at the recorded checkpoint. Complete Kavita and Audiobookshelf readers, downloads and save-back workflows are planned client features. Existing service configuration does not establish reader or transfer functionality.",
+    "journey": "Current: Home → Photos → asset grid → detail. Planned: choose a reader or upload destination, select content, review the destination, then save with progress, conflict and retry handling.",
+    "decisions": [
+      "Keep personal photos out of public documentation.",
+      "Separate read access from upload, delete and library-management permissions.",
+      "Require a native, remote-appropriate reader/viewer before claiming TV parity."
+    ],
+    "steps": [
+      "Define provider-specific reading contracts for books, comics, audiobooks and podcasts.",
+      "Design upload and save-back flows for iPhone/iPad with explicit destination and permissions.",
+      "Test pagination, unavailable assets, key revocation and interrupted transfers."
+    ],
+    "accept": [
+      "Photo metadata and permitted assets load with a scoped key.",
+      "A completed save is confirmed by provider-side retrieval, not merely a progress animation.",
+      "Public documentation continues to distinguish implemented reading from planned write-back."
+    ],
+    "images": []
+  },
+  {
+    "slug": "09-household",
+    "title": "Mealie & Home Assistant",
+    "summary": "Everyday household information without repeated login prompts on approved devices.",
+    "body": "Mealie and Home Assistant are main-menu destinations. iPhone/iPad use embedded service views; Apple TV uses native recipe and state interfaces. Dedicated public app origins accept approved-device sessions, while service administrator credentials remain server-side. Recorded iPhone/iPad checks opened recipe content and the populated household dashboard over Wi-Fi with NetBird disconnected.",
+    "journey": "Home → Mealie → recipe ingredients and steps → Done. Home → Home Assistant → household states → Done. On TV, use native categories and remote Back; supported light/switch actions require confirmation.",
+    "decisions": [
+      "No repeated interactive login means device-authorized access, not anonymous public access.",
+      "Keep session renewal and revocation part of the service contract.",
+      "Separate read-only verification from actions that alter the house."
+    ],
+    "steps": [
+      "Test session expiration, renewal, revocation and foreground return.",
+      "Verify cellular-only access and first enrollment separately from the Wi-Fi VPN-off checkpoint.",
+      "Review native TV action confirmations and provider-specific failure messages."
+    ],
+    "accept": [
+      "Approved access opens actual content rather than stopping at a login shell.",
+      "Anonymous, replayed and revoked access is denied.",
+      "Read-only documentation checks do not actuate household devices."
+    ],
+    "images": []
+  },
+  {
+    "slug": "10-home-lab",
+    "title": "Home-lab architecture & network integration",
+    "summary": "A logical map of the existing environment and the routes the applications depend on.",
+    "body": "The design draws on the September 4 network baseline retrieved on September 5, then on later implementation and acceptance records. Proxmox hosts the virtualized environment; CT100 contains the media/service stack, with other VMs/containers and attached storage supporting the household. NetBird provides private reachability. Reverse proxies expose selected HTTPS origins. Pocket ID supplies human identity for protected entrances. This publication is a dated architecture view, not a fresh fleet-health audit.",
+    "journey": "The app selects a provider route, establishes the appropriate identity/session, requests catalog or household data, and obtains provider-delivered content. Operator consoles, host control, storage administration and break-glass access stay outside the consumer app.",
+    "decisions": [
+      "Separate route reachability, authentication, service health and real content behavior.",
+      "Represent public device-authorized origins separately from private NetBird paths.",
+      "Retain the existing operator plane; do not turn the app into a Proxmox or Docker console."
+    ],
+    "steps": [
+      "Maintain an owner-only inventory mapping logical service names to actual origins, ports, peers, policies and storage dependencies.",
+      "Reconcile the baseline with live DNS, proxy configuration and NetBird policies before changing a route.",
+      "For new NetBird configurations, evaluate the current Networks model; do not infer a migration of the existing environment."
+    ],
+    "accept": [
+      "Every app destination has an explicit provider, route class, identity method and failure behavior.",
+      "An off-VPN claim names the tested service, device, network and enrollment state.",
+      "The public repository contains logical topology without operational addresses or credentials."
+    ],
+    "images": []
+  },
+  {
+    "slug": "11-identity",
+    "title": "Device identity, enrollment & session design",
+    "summary": "Remove repeated prompts without removing authorization.",
+    "body": "An approved device owns a P256 private key held in Keychain/Secure Enclave where available. The access service validates short-lived signed challenges and issues host-scoped service sessions. Jellyfin setup approves that device’s own Quick Connect exchange; Immich provisions a separate restricted key. For household approval, the TV displays an eight-digit, five-minute, single-use code. An already approved iPhone or iPad approves that code.",
+    "journey": "Enroll through the existing protected route → create or retrieve device identity → prove possession → obtain a provider-specific session → renew when appropriate → revoke when the device is removed. First enrollment and ordinary access after approval are separate cases.",
+    "decisions": [
+      "Keep administrator credentials and provisioning secrets on the server.",
+      "Use different provider credentials for different services and devices.",
+      "Do not substitute a hard-coded default account or public unauthenticated tunnel.",
+      "Keep human Pocket ID sign-in distinct from machine/device authorization."
+    ],
+    "steps": [
+      "Document enrollment prerequisites and recovery for replaced devices.",
+      "Verify single-use challenges, expiry, wrong-host cookies and revoked credentials.",
+      "Retest automatic setup on iPad and final TV pairing independently of iPhone success."
+    ],
+    "accept": [
+      "Only the intended approved device completes the provider exchange.",
+      "Revocation removes access and the associated scoped photo key.",
+      "Screenshots, diagnostics and public plans contain no tokens, pairing secrets or private keys."
+    ],
+    "images": []
+  },
+  {
+    "slug": "12-release",
+    "title": "Version history, evidence & delivery",
+    "summary": "Keep implementation, runtime verification and publication as separate milestones.",
+    "body": "This portfolio records the September 6 development checkpoint. Build 9 is the last recorded TestFlight release. Build 10 introduced the household access and native setup work. Build 11 adds the shared video controls and local Mac delivery. Current screenshots mainly show the September 5 interface with demo content, plus a September 6 Mac capture. They are not a screenshot set for every historical build.",
+    "journey": "Implement → review → run contract/unit tests → validate on hardware → archive the final source → upload → confirm Apple processing and tester availability. Publishing this documentation repository does not perform any of those release steps.",
+    "decisions": [
+      "Mark screenshots as demo, runtime or design artwork.",
+      "Record passed, skipped, failed and interrupted tests separately.",
+      "Keep the private implementation repository and public design portfolio distinct."
+    ],
+    "steps": [
+      "Finish iPad controls/automatic setup and Apple TV transport acceptance.",
+      "Repeat the Mac mouse suite without the blocking floating dialog.",
+      "Refresh archives from final source and upload only after required checks pass.",
+      "Verify build processing and the correct internal TestFlight group after upload."
+    ],
+    "accept": [
+      "The source revision and delivered binary are identified.",
+      "A compile result is never used as proof of physical playback.",
+      "A build appears to testers only after Apple processing and group availability are confirmed."
+    ],
+    "images": []
+  }
+]

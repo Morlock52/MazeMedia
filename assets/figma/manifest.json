@@ -1,0 +1,24 @@
+{
+  "fileUrl": "https://www.figma.com/design/sfpDlUVIM1j8i4wZ1wjCBC",
+  "date": "2026-09-06",
+  "boards": [
+    {
+      "name": "cover",
+      "nodeId": "2:2",
+      "file": "assets/figma/cover.png",
+      "sha256": "b7d02fcb10066f152156c06910433ae161b8fd15da79bc78971e04b5fe709aca"
+    },
+    {
+      "name": "platforms",
+      "nodeId": "4:2",
+      "file": "assets/figma/platforms.png",
+      "sha256": "65b21f4a5c082810868e0c5e92a446d9d03f0de5517f5ce690b1e3669e6b01f4"
+    },
+    {
+      "name": "architecture",
+      "nodeId": "2:22",
+      "file": "assets/figma/architecture.png",
+      "sha256": "52702d842d0f03fa368998f0875bd8e9de5b0581b8c854af6c26d595805554f3"
+    }
+  ]
+}
