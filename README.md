@@ -1,5 +1,7 @@
 # Maze Media
 
+**Current engineering checkpoint:** [Build 17 qualification and new screenshots](sections/12-release/build-17/README.md). Signed archives are ready; device acceptance, photo repair and TestFlight submission remain open.
+
 **New in build 13:** [Brass Labyrinth — Morlock’s Maze theme](sections/13-brass-labyrinth/README.md), with original Blender assets, a shared Apple-platform palette and verified app captures.
 
 ![Brass Labyrinth theme](sections/13-brass-labyrinth/figma-theme-board.png)

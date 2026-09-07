@@ -35,3 +35,8 @@ The four platform editions share the product version where applicable. iPhone an
 ## Build 13 — Brass Labyrinth
 
 September 6, 2026: iOS and tvOS build 13 are **Testing** for MorloksMaze Internal. The same theme is installed locally across iPhone, iPad, Mac and Apple TV. [Theme verification](../13-brass-labyrinth/VERIFICATION.md) records tests, skips, the Mac warning and the locked iPhone interaction limit. Earlier entries remain dated historical checkpoints.
+
+
+## September 7, 2026 — Build 17 candidate
+
+[Current test results, reviewed captures and remaining release gates](build-17/README.md). This dated checkpoint supersedes earlier release assumptions without treating historical device checks as current acceptance.

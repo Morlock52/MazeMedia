@@ -1,0 +1,20 @@
+[
+  {
+    "file": "mac-home.png",
+    "sha256": "5a864a505f0a5988ba1e50978f770d4eaabd55a0390af5b1acff8fca58a3323f",
+    "source": "mac17-window-images/94671826-A7E4-44A2-A413-59880CBFE1FA.png",
+    "kind": "Mac Catalyst build 17, synthetic QA artwork, native window screenshot"
+  },
+  {
+    "file": "mac-movies.png",
+    "sha256": "924e57cfebe63bca0db79cea51aefaf5d3a0fd969abd491593e8de8460cb74c0",
+    "source": "mac17-window-images/712DA279-61A8-44BB-8282-40B9BAA0B722.png",
+    "kind": "Mac Catalyst build 17, synthetic QA artwork, native window screenshot"
+  },
+  {
+    "file": "tv-static-shelf.png",
+    "sha256": "407d477efe83c6365fbc89441ded9c295d877248768cb2cb8432aaad898a486b",
+    "source": "tv-shelf-images/2EA6BCBC-AB92-4E77-B8B5-0B6C86A39C3C.png",
+    "kind": "physical Apple TV static shelf, earlier build; not dynamic acceptance"
+  }
+]
