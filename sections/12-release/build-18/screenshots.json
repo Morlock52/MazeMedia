@@ -1,0 +1,20 @@
+[
+  {
+    "file": "mac-home.png",
+    "sha256": "fff058c4314857cacb4b35cfb5f55f61749e59068a5e0e84f47c05159e0e9eb3",
+    "build": "1.0.1 (18)",
+    "platform": "Mac Catalyst on macOS 27 beta",
+    "source": "ScreenDocumentationUITests.testThemeHomeAndNavigation",
+    "content": "Synthetic fixtures; app window only",
+    "reviewed": true
+  },
+  {
+    "file": "mac-movies.png",
+    "sha256": "4ce449a82914fac69fd4a18e92926a2f7ee50783e5e21f3c82fe6b6ef754c25a",
+    "build": "1.0.1 (18)",
+    "platform": "Mac Catalyst on macOS 27 beta",
+    "source": "ScreenDocumentationUITests.testThemeHomeAndNavigation",
+    "content": "Synthetic fixtures; app window only",
+    "reviewed": true
+  }
+]
