@@ -10,10 +10,10 @@ Home now publishes available Jellyfin content while the live guide continues loa
 |---|---|
 | Backend | 62 tests passed; four approved public service routes passed authentication and isolation checks |
 | Luna public route | Readiness and both allowed reasoning modes passed; synthetic request timings were 2.400 s and 1.981 s |
-| Mac application | 77 tests passed; Requests loaded; window screenshots captured and reviewed |
+| Mac application | 77 application tests passed; Requests loaded; three further Mac UI tests passed for playback controls, live Luna and tool search/pinning; earlier window screenshots captured and reviewed |
 | iPad service views | Mealie, Home Assistant, Requests and RomM loaded on the preceding installed build; this is not build 17 acceptance |
 | Provider setup | Jellyfin automatic enrollment passed; photo metadata loaded but 0 of 10 sampled thumbnails were readable |
-| Signed archives | iOS, tvOS and Mac Catalyst archives succeeded |
+| Signed archives and exports | iOS, tvOS and Mac Catalyst archives and App Store distribution exports succeeded; tvOS package includes the build 17 Top Shelf extension |
 | Local delivery | Mac build 17 installed and launched; iPhone build 17 installed; mobile/TV final interaction checks remain pending |
 | Apple TV Top Shelf | Branded static artwork observed with Maze Media selected in the top row; dynamic Jellyfin cards and playback not yet confirmed |
 | TestFlight | Latest directly checked iOS and tvOS release is 1.0.0 (13), Testing. General beta descriptions and the GitHub link were saved; build 17 has not been uploaded |
@@ -45,3 +45,7 @@ Immich’s missing background worker has been restored using the exact pinned se
 The broader whole-catalogue Luna relay remains gated. Build 17 retains the previously admitted bounded discovery behavior, with Quick/Consider modes and a backend-held key.
 
 [Image provenance and hashes](screenshots.json) · [Portfolio](../../../README.md)
+
+The additional Mac run passed all three tests, but disk exhaustion prevented supplementary OS log and screenshot collection. Project-generated caches were cleared and the tvOS export then succeeded. Physical acceptance and TestFlight publication remain pending while the owner is away.
+
+A separate normal Mac live-channel check stalled and failed while waiting for a Jellyfin playlist. This remains an open issue despite the fixture controls pass. Upstream stream bytes were observed once, but subsequent short startup probes timed out. Temporarily stopping the new photo worker did not establish a cause, and photo recovery was restored. Final release requires this live-stream issue to be resolved as well as the outstanding physical-device checks.
