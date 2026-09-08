@@ -1,6 +1,8 @@
 # Maze Media
 
-**Current engineering checkpoint:** [Build 26 — Luna content discovery and follow-up questions](sections/12-release/build-26/README.md). Build 2.0 (26) is available in internal TestFlight for iPhone/iPad, Mac and Apple TV. Physical-device interaction remains unverified.
+**Current source:** [Development candidate 4291afd — personal library, recovery and Luna preview](sections/12-release/candidate-4291afd/README.md). Shared tests: 91 passed; backend tests: 70 passed. Device and expanded-discovery acceptance remain pending. This candidate has not been uploaded to TestFlight.
+
+**Latest confirmed TestFlight release:** [Version 2.0 (26)](sections/12-release/build-26/README.md), verified in internal testing on 8 September 2026 for iPhone/iPad, Mac and Apple TV.
 
 **New in build 13:** [Brass Labyrinth — Morlock’s Maze theme](sections/13-brass-labyrinth/README.md), with original Blender assets, a shared Apple-platform palette and verified app captures.
 
