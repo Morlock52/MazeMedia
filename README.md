@@ -1,6 +1,6 @@
 # Maze Media
 
-**Current engineering checkpoint:** [Build 18 live-TV repair and new screenshots](sections/12-release/build-18/README.md). Real Mac live playback passed; Mac and iPhone are updated. Physical device acceptance, photo verification and TestFlight submission remain open.
+**Current engineering checkpoint:** [Build 26 — Luna content discovery and follow-up questions](sections/12-release/build-26/README.md). Signed archives and backend checks passed; TestFlight publication is in progress. Physical-device interaction remains unverified.
 
 **New in build 13:** [Brass Labyrinth — Morlock’s Maze theme](sections/13-brass-labyrinth/README.md), with original Blender assets, a shared Apple-platform palette and verified app captures.
 
