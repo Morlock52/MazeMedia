@@ -30,6 +30,26 @@ A build or screenshot is not proof of physical-device functionality. Existing Te
 
 ## Screenshots
 
-Fresh candidate captures are pending. The existing portfolio images remain dated historical references and are not relabelled as this candidate.
+Captured on 8 September 2026 from the current Mac Catalyst development binary at source checkpoint `4291afd`. These are unedited application-window captures using demo content; no household media or desktop content is included. They demonstrate appearance and the saved-favorite flow, not physical iPhone/iPad/TV acceptance or successful streaming. Other platform images in the portfolio retain their original dates.
+
+### Home
+
+![Current candidate Home with personal library and Continue shelf](../../../assets/screenshots/candidate-4291afd/mac-home.png)
+
+The shared Home screen puts My library and Continue near the top. The readiness indicator reports Luna availability; it does not mean expanded whole-library discovery is enabled.
+
+### My library
+
+![Current candidate favorites and saved searches](../../../assets/screenshots/candidate-4291afd/mac-personal-library.png)
+
+A demo movie saved from its detail screen appears under Favorites. Saved searches and favorites are local to this device and partitioned by account.
+
+### Movie detail
+
+![Current candidate movie detail with favorite and compatible playback controls](../../../assets/screenshots/candidate-4291afd/mac-movie-detail.png)
+
+The detail screen exposes Save to favorites, Play and compatible playback. Placeholder artwork is deliberate demo content. This still image is not evidence of playback recovery succeeding.
+
+[Capture provenance and hashes](../../../assets/screenshots/manifest.json)
 
 [Implementation commit](https://github.com/Morlock52/morlocksmaze-media/commit/4291afd5233e7f865bb28e932ecfae0d707aea8b) · [Release section](../README.md)

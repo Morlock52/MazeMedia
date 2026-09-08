@@ -18,6 +18,12 @@ Maze Media gives the home lab a coherent client experience. Jellyfin remains res
 
 This is the **public design and documentation repository**. The [implementation repository](https://github.com/Morlock52/morlocksmaze-media) is separately maintained and may require access. This repository contains no app binaries or turnkey home-lab configuration. Publishing it does not publish a TestFlight build.
 
+## Current candidate captures
+
+![Current development candidate: My library on Mac](assets/screenshots/candidate-4291afd/mac-personal-library.png)
+
+**Captured 8 September 2026 · Mac Catalyst · demo content.** [View Home, My library and movie detail](sections/12-release/candidate-4291afd/README.md#screenshots). These are current candidate screenshots; the four-platform portfolio below retains its original capture dates.
+
 ## Four application editions
 
 ![Four platform editions with original application screenshots](assets/figma/platforms.png)

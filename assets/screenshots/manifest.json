@@ -70,5 +70,29 @@
     "kind": "Mac runtime / demo fixture",
     "date": "2026-09-06",
     "sha256": "64c9d507f01c33ee7d900fba9d156f2c3ce11400061b8c82cb8a492c7a2dd71a"
+  },
+  {
+    "file": "assets/screenshots/candidate-4291afd/mac-home.png",
+    "kind": "Mac Catalyst / current development binary / demo fixtures / unedited application-window capture",
+    "date": "2026-09-08",
+    "source_commit": "4291afd5233e7f865bb28e932ecfae0d707aea8b",
+    "bundle_version": "2.0 (26), development candidate; not the TestFlight binary",
+    "sha256": "0e76e50ba16d99e3a1e8a9319b3c86fc798697e77c582457994b54c9f20fdd1e"
+  },
+  {
+    "file": "assets/screenshots/candidate-4291afd/mac-movie-detail.png",
+    "kind": "Mac Catalyst / current development binary / demo fixtures / unedited application-window capture",
+    "date": "2026-09-08",
+    "source_commit": "4291afd5233e7f865bb28e932ecfae0d707aea8b",
+    "bundle_version": "2.0 (26), development candidate; not the TestFlight binary",
+    "sha256": "aba9cc6f9c8206cb44902f52c124ccc27d358c27ec197258eb0887313249e50e"
+  },
+  {
+    "file": "assets/screenshots/candidate-4291afd/mac-personal-library.png",
+    "kind": "Mac Catalyst / current development binary / demo fixtures / unedited application-window capture",
+    "date": "2026-09-08",
+    "source_commit": "4291afd5233e7f865bb28e932ecfae0d707aea8b",
+    "bundle_version": "2.0 (26), development candidate; not the TestFlight binary",
+    "sha256": "6eeca33f084ad42e2e10c5c49c62efd0062876b9d2e2e24e424fed081635361e"
   }
 ]
