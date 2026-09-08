@@ -1,6 +1,6 @@
 # Current development candidate · 4291afd
 
-**Source checkpoint:** 8 September 2026. **Release status:** not uploaded to TestFlight.
+**Source checkpoint:** 8 September 2026. This page preserves the pre-release capture record. Its admitted features were subsequently distributed in [TestFlight build 27](../build-27/README.md); expanded Luna remains gated.
 
 The candidate follows the released 2.0 (26) build. Its local development binary still carries version 2.0 (26), so the source commit identifies it precisely; it is not the same binary distributed through TestFlight. A new build number is required before distribution.
 

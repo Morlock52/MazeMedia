@@ -1,8 +1,8 @@
 # Maze Media
 
-**Current source:** [Development candidate 4291afd — personal library, recovery and Luna preview](sections/12-release/candidate-4291afd/README.md). Shared tests: 91 passed; backend tests: 70 passed. Device and expanded-discovery acceptance remain pending. This candidate has not been uploaded to TestFlight.
+**Current TestFlight release:** [Version 2.0 (27) — personal library and playback recovery](sections/12-release/build-27/README.md). Verified **Testing** in MorloksMaze Internal on 8 September 2026 for iPhone/iPad, Mac and Apple TV. Testing notes and the project link are saved. Physical-device and Top Shelf acceptance remain pending; expanded Luna discovery is still disabled.
 
-**Latest confirmed TestFlight release:** [Version 2.0 (26)](sections/12-release/build-26/README.md), verified in internal testing on 8 September 2026 for iPhone/iPad, Mac and Apple TV.
+**Current screenshots:** [Home, My library and movie detail](sections/12-release/candidate-4291afd/README.md#screenshots), captured from the same feature code before its build-number update for distribution.
 
 **New in build 13:** [Brass Labyrinth — Morlock’s Maze theme](sections/13-brass-labyrinth/README.md), with original Blender assets, a shared Apple-platform palette and verified app captures.
 
