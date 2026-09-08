@@ -10,4 +10,4 @@ Verification: 67 backend tests and all three signed distribution archives passed
 
 YouTube publish dates are now populated for 6,856 of 6,865 source records. Nine unavailable IDs retain an explicit placeholder. The currently exposed Jellyfin catalog has verified dates on all 125 resolvable videos. Live TV retains the preceding fragmented-MP4 correction; cold startup remains noticeable.
 
-TestFlight upload and processing status will be recorded after Apple confirms completion. Existing screenshots illustrate earlier builds; no new screenshot acceptance is claimed.
+All three uploads succeeded and Apple processing completed. Build 2.0 (26) is Testing in MorloksMaze Internal for iOS/iPadOS, macOS and tvOS. Testing notes and the GitHub link were saved on every build. This confirms availability, not physical installation or interaction. Existing screenshots illustrate earlier builds; no new screenshot acceptance is claimed.
